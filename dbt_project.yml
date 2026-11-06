@@ -4,9 +4,6 @@ name: "jaffle_shop"
 version: "3.0.0"
 require-dbt-version: ">=2.0.0"
 
-dbt-cloud:
-  project-id: 275557 # Put your project id here
-
 profile: default # Put your profile here
 
 model-paths: ["models"]
@@ -25,7 +22,7 @@ seeds:
   jaffle_shop:
     +schema: raw
     jaffle-data:
-      +enabled: "{{ var('load_source_data', false) }}"
+      +enabled: "{{ var('load_source_data', true) }}"
 
 models:
   jaffle_shop:

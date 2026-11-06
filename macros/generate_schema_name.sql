@@ -2,9 +2,9 @@
 
     {% set default_schema = target.schema %}
 
-    {# seeds go in a global `raw` schema #}
+    {# seeds go in `<target schema>_raw`, so each environment gets its own copy #}
     {% if node.resource_type == 'seed' %}
-        {{ custom_schema_name | trim }}
+        {{ default_schema }}_{{ custom_schema_name | trim }}
 
     {# non-specified schemas go to the default target schema #}
     {% elif custom_schema_name is none %}
