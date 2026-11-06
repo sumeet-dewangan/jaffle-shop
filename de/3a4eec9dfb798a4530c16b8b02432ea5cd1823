@@ -1,0 +1,23 @@
+dbt_project.yml
+  s_2bec164372e525::t_e21289b00e9d19 25
+macros/generate_schema_name.sql
+  s_2bec164372e525::t_e082eee37b22f4 5,7
+models/staging/__sources.yml
+  s_2bec164372e525::t_6ad4ce87534f4b 5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "de3a4eec9dfb798a4530c16b8b02432ea5cd1823",
+  "prompts": {},
+  "sessions": {
+    "s_2bec164372e525": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "4924effb-7655-4a17-a141-c37741a0485d",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Sumeet dewangan <sumeet.dewangan@sumeet.dewangan-F9P16T7Y7C>"
+    }
+  }
+}
